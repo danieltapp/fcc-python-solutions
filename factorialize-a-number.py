@@ -4,10 +4,11 @@
 #For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
 
 def factorialize(n):
-    if n == 0 or n == 1:
-        return 1
-    else:
-        return n
+    num = 1
+    while n >= 1:
+        num = num * n
+        n = n -1
+    return num
 
 print(factorialize(5))
 print(factorialize(10))
