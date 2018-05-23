@@ -1,9 +1,8 @@
-#UNSOLVED - LOOK INTO REGEX TO REMOVE NON-ALPHANUMERIC FROM STRING
-
+import string
 #Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
 
 def title_case(str):
-    return str.lower().title()
+    return string.capwords(str)
    
 
 print(title_case("I'm a little tea pot"))
